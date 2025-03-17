@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "consultor salomon",
+            "invocationName": "asistente virtual",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
