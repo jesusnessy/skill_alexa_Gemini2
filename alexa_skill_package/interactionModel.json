@@ -5,15 +5,29 @@
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
-                    "samples": []
+                    "samples": [
+                        "cancela",
+                        "cancela la búsqueda",
+                        "no, gracias"
+                    ]
                 },
                 {
                     "name": "AMAZON.HelpIntent",
-                    "samples": []
+                    "samples": [
+                        "ayuda",
+                        "cómo funciona",
+                        "qué puedes hacer",
+                        "necesito ayuda"
+                    ]
                 },
                 {
                     "name": "AMAZON.StopIntent",
-                    "samples": []
+                    "samples": [
+                        "detente",
+                        "para",
+                        "hasta aquí",
+                        "termina"
+                    ]
                 },
                 {
                     "name": "BuscarInformacionIntent",
@@ -28,7 +42,9 @@
                         "busca información sobre {query}",
                         "dime sobre {query}",
                         "qué sabes de {query}",
-                        "cuéntame sobre {query}"
+                        "cuéntame sobre {query}",
+                        "explícame {query}",
+                        "dime más sobre {query}"
                     ]
                 }
             ],

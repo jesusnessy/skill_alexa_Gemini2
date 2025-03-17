@@ -4,18 +4,19 @@
         "locales": {
             "es-ES": {
                 "name": "Asistente Virtual Gemini",
-                "summary": "Asistente virtual con Gemini 2.0",
-                "description": "Un asistente virtual que utiliza la inteligencia artificial de Gemini 2.0 para responder preguntas y buscar información.",
+                "summary": "Asistente virtual con inteligencia artificial Gemini 2.0",
+                "description": "Un asistente virtual que utiliza la inteligencia artificial de Gemini 2.0 para responder preguntas y buscar información de manera precisa y concisa.",
                 "examplePhrases": [
-                    "Alexa, abre Asistente Virtual Gemini",
-                    "Alexa, pregunta a asistente virtual sobre el universo",
-                    "Alexa, dile a asistente virtual que busque información sobre la historia"
+                    "Alexa, abre gemini consultor",
+                    "Alexa, pregunta a gemini consultor sobre el universo",
+                    "Alexa, dile a gemini consultor que busque información sobre la historia"
                 ],
                 "keywords": [
                     "gemini",
                     "búsqueda",
                     "información",
-                    "asistente virtual"
+                    "asistente virtual",
+                    "inteligencia artificial"
                 ]
             }
         },
@@ -25,13 +26,8 @@
     "apis": {
         "custom": {
             "endpoint": {
-                "uri": "arn:aws:lambda:us-east-1:YOUR_ACCOUNT_ID:function:reySalomonFunction"
-            },
-            "interfaces": [
-                {
-                    "type": "ALEXA_PRESENTATION_APL"
-                }
-            ]
+                "uri": "arn:aws:lambda:us-east-1:YOUR_ACCOUNT_ID:function:geminiConsultorFunction"
+            }
         }
     },
     "permissions": [

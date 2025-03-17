@@ -43,9 +43,15 @@ class BuscarInformacionHandler(AbstractRequestHandler):
                 ).ask("¿Qué te gustaría saber?").response
 
             # Generar respuesta con Gemini
-            response = model.generate_content(
-                f"Responde en español de manera concisa y clara: {query}"
-            )
+            try:
+                response = model.generate_content(
+                    f"Responde en español de manera concisa y clara (máximo 3-4 frases): {query}"
+                )
+            except Exception as e:
+                print(f"Error al generar respuesta con Gemini: {str(e)}")
+                return handler_input.response_builder.speak(
+                    "Lo siento, ha ocurrido un error al procesar tu consulta. Por favor, intenta de nuevo."
+                ).ask("¿Hay algo más en lo que pueda ayudarte?").response
             
             if not response or not response.text:
                 return handler_input.response_builder.speak(
@@ -55,8 +61,8 @@ class BuscarInformacionHandler(AbstractRequestHandler):
             speech_text = response.text.strip()
             
             # Limitar la longitud de la respuesta para Alexa
-            if len(speech_text) > 800:
-                speech_text = speech_text[:800] + "..."
+            if len(speech_text) > 500:
+                speech_text = speech_text[:500] + "..."
 
         except Exception as e:
             print(f"Error al procesar la consulta: {str(e)}")
@@ -69,7 +75,7 @@ class LaunchRequestHandler(AbstractRequestHandler):
         return is_request_type("LaunchRequest")(handler_input)
 
     def handle(self, handler_input):
-        speech_text = "¡Hola! Soy Rey Salomón, tu agemini consultor con Gemini. Puedo ayudarte a buscar información sobre cualquier tema. ¿Qué te gustaría saber?"
+        speech_text = "¡Hola! Soy tu asistente virtual con Gemini. Puedo ayudarte a buscar información sobre cualquier tema. ¿Qué te gustaría saber?"
         return handler_input.response_builder.speak(speech_text).ask("¿Sobre qué tema te gustaría aprender?").response
 
 class HelpIntentHandler(AbstractRequestHandler):
