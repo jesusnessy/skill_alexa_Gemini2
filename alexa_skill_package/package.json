@@ -1,0 +1,22 @@
+{
+  "name": "rey-salomon-skill",
+  "version": "1.0.0",
+  "description": "Skill de Alexa que utiliza Gemini 2.0 para búsquedas de información",
+  "main": "lambda_function.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "gemini",
+    "ai"
+  ],
+  "author": "jesusnessy",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk-core": "^1.19.0",
+    "google-generativeai": "^0.3.2",
+    "python-dotenv": "^1.0.0"
+  }
+} 
