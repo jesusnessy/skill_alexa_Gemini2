@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "asistente virtual",
+            "invocationName": "gemini consultor",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
