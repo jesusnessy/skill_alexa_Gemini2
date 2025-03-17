@@ -1,0 +1,38 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rey salomon",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "BuscarInformacionIntent",
+                    "slots": [
+                        {
+                            "name": "query",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "busca {query}",
+                        "busca información sobre {query}",
+                        "dime sobre {query}",
+                        "qué sabes de {query}",
+                        "cuéntame sobre {query}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+} 
