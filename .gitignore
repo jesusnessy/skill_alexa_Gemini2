@@ -36,4 +36,8 @@ wheels/
 
 # Sistema operativo
 .DS_Store
-Thumbs.db 
+Thumbs.db
+
+# Archivos de Alexa
+alexa_skill_package.zip
+alexa_skill_package/ 
