@@ -3,13 +3,13 @@
     "publishingInformation": {
         "locales": {
             "es-ES": {
-                "name": "Rey Salomón",
+                "name": "Asistente Virtual Gemini",
                 "summary": "Asistente virtual con Gemini 2.0",
                 "description": "Un asistente virtual que utiliza la inteligencia artificial de Gemini 2.0 para responder preguntas y buscar información.",
                 "examplePhrases": [
-                    "Alexa, abre Rey Salomón",
-                    "Alexa, pregunta a Rey Salomón sobre el universo",
-                    "Alexa, dile a Rey Salomón que busque información sobre la historia"
+                    "Alexa, abre Asistente Virtual Gemini",
+                    "Alexa, pregunta a asistente virtual sobre el universo",
+                    "Alexa, dile a asistente virtual que busque información sobre la historia"
                 ],
                 "keywords": [
                     "gemini",
