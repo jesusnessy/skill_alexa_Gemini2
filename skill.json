@@ -3,19 +3,19 @@
     "publishingInformation": {
         "locales": {
             "es-ES": {
-                "name": "Rey Salomón",
-                "summary": "Asistente virtual con Gemini 2.0",
-                "description": "Un asistente virtual que utiliza la inteligencia artificial de Gemini 2.0 para responder preguntas y buscar información.",
+                "name": "Gemini consultor",
+                "summary": "gemini consultor con Gemini 2.0",
+                "description": "Un gemini consultor que utiliza la inteligencia artificial de Gemini 2.0 para responder preguntas y buscar información.",
                 "examplePhrases": [
-                    "Alexa, abre Rey Salomón",
-                    "Alexa, pregunta a Rey Salomón sobre el universo",
-                    "Alexa, dile a Rey Salomón que busque información sobre la historia"
+                    "Alexa, abre gemini consultor",
+                    "Alexa, pregunta a gemini consultor sobre el universo",
+                    "Alexa, dile a gemini consultor que busque información sobre la historia"
                 ],
                 "keywords": [
                     "gemini",
                     "búsqueda",
                     "información",
-                    "asistente virtual"
+                    "gemini consultor"
                 ]
             }
         },
