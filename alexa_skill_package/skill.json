@@ -7,9 +7,9 @@
                 "summary": "Asistente virtual con inteligencia artificial Gemini 2.0",
                 "description": "Un asistente virtual que utiliza la inteligencia artificial de Gemini 2.0 para responder preguntas y buscar información de manera precisa y concisa.",
                 "examplePhrases": [
-                    "Alexa, abre gemini consultor",
-                    "Alexa, pregunta a gemini consultor sobre el universo",
-                    "Alexa, dile a gemini consultor que busque información sobre la historia"
+                    "Alexa, abre consultor digital",
+                    "Alexa, pregunta a consultor digital sobre el universo",
+                    "Alexa, dile a consultor digital que busque información sobre la historia"
                 ],
                 "keywords": [
                     "gemini",
